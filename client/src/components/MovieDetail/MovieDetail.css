@@ -1,0 +1,28 @@
+.disable-interactions {
+  pointer-events: none;
+  opacity: 0.4; /* Optional: reduces the opacity to visually indicate that the element is disabled */
+}
+
+.enable-interactions {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.movie-detail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050; /* High z-index to ensure it covers other components */
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.back-to-list {
+  position: fixed;
+  top: 60px;
+  left: 5px;
+  z-index: 1100; /* Ensures it stays on top */
+}
